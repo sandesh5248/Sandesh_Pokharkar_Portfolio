@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sandesh Pokharkar | L2 Network Support Engineer | Cisco & FortiGate</title>
+    <meta name="description" content="Portfolio of Sandesh Pokharkar - Network Engineer specializing in L2 Network Support, Cisco Routers & Switches, FortiGate Firewalls, OSPF, HSRP, VLANs, and 24x7 Enterprise Operations.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Fira+Code:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        mono: ['Fira Code', 'monospace'],
+                    },
+                    colors: {
+                        sky: {
+                            400: '#38bdf8',
+                            500: '#0ea5e9',
+                            600: '#0284c7',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-slate-950 text-slate-100 font-sans antialiased selection:bg-sky-500 selection:text-slate-950">
+
+    <!-- Ambient Lighting Background -->
+    <div class="fixed inset-0 pointer-events-none z-0 overflow-hidden">
+        <div class="absolute -top-40 -left-40 w-[500px] h-[500px] bg-sky-600/10 rounded-full blur-[140px]"></div>
+        <div class="absolute top-1/2 -right-40 w-[500px] h-[500px] bg-blue-600/10 rounded-full blur-[160px]"></div>
+        <div class="subtle-grid-bg absolute inset-0"></div>
+    </div>
+
+    <!-- Navigation Header -->
+    <header class="sticky top-0 z-50 border-b border-slate-800/80 bg-slate-950/85 backdrop-blur-xl">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            
+            <a href="#" class="flex items-center gap-3.5 group">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-sky-400 to-blue-600 flex items-center justify-center text-slate-950 font-black text-lg shadow-lg shadow-sky-500/20 group-hover:scale-105 transition-transform">
+                    SP
+                </div>
+                <div>
+                    <h1 class="font-extrabold text-base text-slate-100 group-hover:text-sky-400 transition-colors leading-tight">Sandesh Pokharkar</h1>
+                    <p class="text-xs text-sky-400 font-medium">Network Support Engineer (L2)</p>
+                </div>
+            </a>
+
+            <!-- Navigation Links -->
+            <nav class="hidden md:flex items-center gap-8 text-sm font-semibold text-slate-300">
+                <a href="#summary" class="hover:text-sky-400 transition-colors">Summary</a>
+                <a href="#experience" class="hover:text-sky-400 transition-colors">Experience</a>
+                <a href="#skills" class="hover:text-sky-400 transition-colors">Skills</a>
+                <a href="#projects" class="hover:text-sky-400 transition-colors">Projects</a>
+                <a href="#education" class="hover:text-sky-400 transition-colors">Education & CCNA</a>
+                <a href="#contact" class="px-5 py-2.5 rounded-xl bg-sky-500 hover:bg-sky-400 text-slate-950 font-bold shadow-lg shadow-sky-500/25 transition-all">
+                    Contact NOC
+                </a>
+            </nav>
+
+            <!-- Mobile Menu Toggle -->
+            <button id="mobile-menu-btn" class="md:hidden text-slate-300 hover:text-sky-400 text-xl p-2 rounded-lg bg-slate-900 border border-slate-800">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Navigation Menu -->
+        <div id="mobile-menu" class="hidden md:hidden border-b border-slate-800 bg-slate-950/95 px-6 py-4 space-y-3.5 text-sm font-medium">
+            <a href="#summary" class="block hover:text-sky-400 text-slate-200">About & Summary</a>
+            <a href="#experience" class="block hover:text-sky-400 text-slate-200">Work Experience</a>
+            <a href="#skills" class="block hover:text-sky-400 text-slate-200">Technical Skills</a>
+            <a href="#projects" class="block hover:text-sky-400 text-slate-200">Lab Projects</a>
+            <a href="#education" class="block hover:text-sky-400 text-slate-200">Education & CCNA</a>
+            <a href="#contact" class="block hover:text-sky-400 text-sky-400 font-bold">Contact Me</a>
+        </div>
+    </header>
+
+    <main class="relative z-10">
+
+        <!-- Hero Section -->
+        <section class="py-20 md:py-28 border-b border-slate-800/80">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                    
+                    <div class="lg:col-span-8 space-y-6">
+                        <div class="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full bg-sky-500/10 border border-sky-500/30 text-sky-400 text-xs font-semibold">
+                            <i class="fa-solid fa-shield-halved"></i> Cisco • FortiGate L2 Network Specialist
+                        </div>
+
+                        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black text-slate-100 tracking-tight leading-tight">
+                            SANDESH POKHARKAR
+                        </h1>
+
+                        <div class="text-xl sm:text-2xl font-bold text-sky-400">
+                            Network Engineer | L2 Network Support | Cisco • FortiGate
+                        </div>
+
+                        <p class="text-slate-300 text-base sm:text-lg leading-relaxed max-w-3xl">
+                            Hands-on experience supporting a 24×7 enterprise network at <strong class="text-white">NTT GDC</strong> for banking client <strong class="text-sky-400">HDFC (via Kyndryl)</strong>. Specializing in monitoring, incident handling, and Layer 2/Layer 3 troubleshooting across Cisco routers & switches and FortiGate firewalls within SLA.
+                        </p>
+
+                        <!-- Contact Badges -->
+                        <div class="flex flex-wrap gap-3.5 pt-2 text-xs font-mono text-slate-300">
+                            <div class="flex items-center gap-2 bg-slate-900 border border-slate-800 px-4 py-2.5 rounded-xl">
+                                <i class="fa-solid fa-location-dot text-sky-400"></i> Dombivli, Maharashtra, India
+                            </div>
+                            <a href="tel:+919152600509" class="flex items-center gap-2 bg-slate-900 border border-slate-800 hover:border-sky-500/50 px-4 py-2.5 rounded-xl transition-colors">
+                                <i class="fa-solid fa-phone text-sky-400"></i> +91 9152600509
+                            </a>
+                            <a href="mailto:sandeshpokharkar5248@gmail.com" class="flex items-center gap-2 bg-slate-900 border border-slate-800 hover:border-sky-500/50 px-4 py-2.5 rounded-xl transition-colors">
+                                <i class="fa-solid fa-envelope text-sky-400"></i> sandeshpokharkar5248@gmail.com
+                            </a>
+                            <a href="https://linkedin.com/in/sandeshpokharkar-942809418" target="_blank" rel="noopener" class="flex items-center gap-2 bg-slate-900 border border-slate-800 hover:border-sky-500/50 px-4 py-2.5 rounded-xl transition-colors text-blue-400">
+                                <i class="fa-brands fa-linkedin text-sm"></i> LinkedIn Profile
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Avatar Card -->
+                    <div class="lg:col-span-4 flex justify-center lg:justify-end">
+                        <div class="relative group">
+                            <div class="absolute -inset-1 bg-gradient-to-r from-sky-500 to-blue-600 rounded-3xl blur-xl opacity-30 group-hover:opacity-50 transition duration-700"></div>
+                            <div class="relative rounded-2xl bg-slate-900 p-3.5 border border-slate-800 shadow-2xl">
+                                <img src="avatar.jpg" alt="Sandesh Pokharkar" class="w-64 h-64 sm:w-72 sm:h-72 rounded-xl object-cover">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Professional Summary & Core Strengths Section -->
+        <section id="summary" class="py-20 md:py-24 border-b border-slate-800/80 bg-slate-900/30">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
+                
+                <div class="space-y-3">
+                    <span class="text-xs font-mono font-bold text-sky-400 tracking-widest uppercase bg-sky-500/10 px-3 py-1 rounded-full border border-sky-500/30">Professional Summary</span>
+                    <h2 class="text-3xl sm:text-4xl font-black text-slate-100">Enterprise L2 Network Operations & Support</h2>
+                </div>
+
+                <div class="bg-slate-900 border border-slate-800 rounded-2xl p-7 sm:p-9 shadow-xl space-y-8">
+                    <p class="text-slate-300 text-base leading-relaxed">
+                        Network engineer with hands-on experience supporting a 24×7 enterprise network at NTT GDC for a large banking client (HDFC, via Kyndryl). Day-to-day work covers monitoring, incident handling and Layer 2/Layer 3 troubleshooting across Cisco routers and switches and FortiGate firewalls, within SLA. Strong grounding in VLANs, STP/RSTP, EtherChannel, OSPF, HSRP, ACLs, NAT and DHCP/DNS, backed by CCNA training and practical work on physical network devices. Looking for an L2 Network Engineer role in network operations, incident resolution and infrastructure support.
+                    </p>
+
+                    <div class="border-t border-slate-800 pt-6 space-y-4">
+                        <h3 class="text-xs font-mono font-bold text-slate-400 uppercase tracking-widest">Core Strengths & Competencies</h3>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3.5">
+                            <div class="px-4 py-3 rounded-xl bg-slate-950 border border-slate-800 text-slate-200 text-xs font-semibold flex items-center gap-3"><i class="fa-solid fa-circle-check text-emerald-400 text-sm"></i> Network Troubleshooting</div>
+                            <div class="px-4 py-3 rounded-xl bg-slate-950 border border-slate-800 text-slate-200 text-xs font-semibold flex items-center gap-3"><i class="fa-solid fa-circle-check text-emerald-400 text-sm"></i> Incident & Fault Handling</div>
+                            <div class="px-4 py-3 rounded-xl bg-slate-950 border border-slate-800 text-slate-200 text-xs font-semibold flex items-center gap-3"><i class="fa-solid fa-circle-check text-emerald-400 text-sm"></i> Analytical Thinking</div>
+                            <div class="px-4 py-3 rounded-xl bg-slate-950 border border-slate-800 text-slate-200 text-xs font-semibold flex items-center gap-3"><i class="fa-solid fa-circle-check text-emerald-400 text-sm"></i> Technical Documentation</div>
+                            <div class="px-4 py-3 rounded-xl bg-slate-950 border border-slate-800 text-slate-200 text-xs font-semibold flex items-center gap-3"><i class="fa-solid fa-circle-check text-emerald-400 text-sm"></i> Quick Learning</div>
+                            <div class="px-4 py-3 rounded-xl bg-slate-950 border border-slate-800 text-slate-200 text-xs font-semibold flex items-center gap-3"><i class="fa-solid fa-circle-check text-emerald-400 text-sm"></i> Team Collaboration</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Work Experience Section -->
+        <section id="experience" class="py-20 md:py-24 border-b border-slate-800/80">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
+                
+                <div class="space-y-3">
+                    <span class="text-xs font-mono font-bold text-sky-400 tracking-widest uppercase bg-sky-500/10 px-3 py-1 rounded-full border border-sky-500/30">Work Experience</span>
+                    <h2 class="text-3xl sm:text-4xl font-black text-slate-100">Professional Background</h2>
+                </div>
+
+                <div class="bg-slate-900 border border-slate-800 rounded-2xl p-7 sm:p-9 shadow-xl space-y-6">
+                    
+                    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-slate-800 pb-6">
+                        <div>
+                            <h3 class="text-2xl font-extrabold text-slate-100">Network Support Engineer</h3>
+                            <div class="text-sky-400 font-semibold text-sm mt-1">Outworx (Payroll)</div>
+                            <div class="text-xs text-slate-400 font-mono mt-1.5 flex items-center gap-2">
+                                <i class="fa-solid fa-building text-sky-400"></i> Client: Kyndryl – HDFC | Workplace: NTT GDC, Ghatkopar, Mumbai
+                            </div>
+                        </div>
+                        <div class="font-mono text-xs px-4 py-2 rounded-full bg-sky-500/10 border border-sky-500/30 text-sky-300 font-bold w-fit shadow-sm">
+                            Sep 2025 – Present
+                        </div>
+                    </div>
+
+                    <!-- Resume Bullets -->
+                    <ul class="space-y-4 text-slate-300 text-sm leading-relaxed">
+                        <li class="flex items-start gap-3.5">
+                            <i class="fa-solid fa-angle-right text-sky-400 text-base mt-0.5"></i>
+                            <span>Provide 24×7 monitoring and support for the enterprise network (routers, switches, firewalls, WAN links and core services), acting quickly on alerts to protect service availability.</span>
+                        </li>
+                        <li class="flex items-start gap-3.5">
+                            <i class="fa-solid fa-angle-right text-sky-400 text-base mt-0.5"></i>
+                            <span>Own incidents and service requests end to end in the ticketing tool, resolving or escalating within SLA with clear handover notes.</span>
+                        </li>
+                        <li class="flex items-start gap-3.5">
+                            <i class="fa-solid fa-angle-right text-sky-400 text-base mt-0.5"></i>
+                            <span>Diagnose Layer 2/Layer 3 faults, including VLAN, trunk, STP, interface errors, routing, DHCP, DNS and link connectivity problems.</span>
+                        </li>
+                        <li class="flex items-start gap-3.5">
+                            <i class="fa-solid fa-angle-right text-sky-400 text-base mt-0.5"></i>
+                            <span>Run health checks and diagnostics on Cisco routers and switches using IOS show commands, logs and monitoring alerts.</span>
+                        </li>
+                        <li class="flex items-start gap-3.5">
+                            <i class="fa-solid fa-angle-right text-sky-400 text-base mt-0.5"></i>
+                            <span>Support FortiGate firewall operations: policy verification, NAT, VPN and first-level troubleshooting.</span>
+                        </li>
+                        <li class="flex items-start gap-3.5">
+                            <i class="fa-solid fa-angle-right text-sky-400 text-base mt-0.5"></i>
+                            <span>Assist with planned network changes, device onboarding, link monitoring and outage investigation, including root-cause notes.</span>
+                        </li>
+                        <li class="flex items-start gap-3.5">
+                            <i class="fa-solid fa-angle-right text-sky-400 text-base mt-0.5"></i>
+                            <span>Coordinate with cross-functional teams and vendors to restore services and keep them stable.</span>
+                        </li>
+                        <li class="flex items-start gap-3.5">
+                            <i class="fa-solid fa-angle-right text-sky-400 text-base mt-0.5"></i>
+                            <span>Maintain accurate records of incidents, changes, IP addressing and network diagrams.</span>
+                        </li>
+                    </ul>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Technical Skills Matrix Section -->
+        <section id="skills" class="py-20 md:py-24 border-b border-slate-800/80 bg-slate-900/30">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
+                
+                <div class="space-y-3">
+                    <span class="text-xs font-mono font-bold text-sky-400 tracking-widest uppercase bg-sky-500/10 px-3 py-1 rounded-full border border-sky-500/30">Technical Skills</span>
+                    <h2 class="text-3xl sm:text-4xl font-black text-slate-100">Networking Stack & Skill Matrix</h2>
+                </div>
+
+                <!-- Symmetric Grid Layout -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+                    <!-- Switching & Routing -->
+                    <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 space-y-4 flex flex-col justify-between">
+                        <div class="space-y-4">
+                            <div class="flex items-center gap-3.5 border-b border-slate-800 pb-3.5">
+                                <div class="w-10 h-10 rounded-xl bg-sky-500/10 text-sky-400 flex items-center justify-center font-bold text-lg">
+                                    <i class="fa-solid fa-route"></i>
+                                </div>
+                                <h3 class="font-bold text-slate-100 text-base">Switching & Routing</h3>
+                            </div>
+                            <div class="flex flex-wrap gap-2 text-xs font-mono text-slate-300">
+                                <span class="px-2.5 py-1 rounded-lg bg-slate-950 border border-slate-800 text-slate-200"><i class="fa-solid fa-check text-sky-400 mr-1.5"></i>VLANs</span>
+                                <span class="px-2.5 py-1 rounded-lg bg-slate-950 border border-slate-800 text-slate-200"><i class="fa-solid fa-check text-sky-400 mr-1.5"></i>Access / Trunk (802.1Q)</span>
+                                <span class="px-2.5 py-1 rounded-lg bg-slate-950 border border-slate-800 text-slate-200"><i class="fa-solid fa-check text-sky-400 mr-1.5"></i>STP / RSTP</span>
+                                <span class="px-2.5 py-1 rounded-lg bg-slate-950 border border-slate-800 text-slate-200"><i class="fa-solid fa-check text-sky-400 mr-1.5"></i>EtherChannel / LACP</span>
+                                <span class="px-2.5 py-1 rounded-lg bg-slate-950 border border-slate-800 text-slate-200"><i class="fa-solid fa-check text-sky-400 mr-1.5"></i>Inter-VLAN Routing</span>
+                                <span class="px-2.5 py-1 rounded-lg bg-slate-950 border border-slate-800 text-slate-200"><i class="fa-solid fa-check text-sky-400 mr-1.5"></i>Static / Default Routing</span>
+                                <span class="px-2.5 py-1 rounded-lg bg-slate-950 border border-slate-800 text-sky-300 font-bold"><i class="fa-solid fa-check text-sky-400 mr-1.5"></i>OSPF</span>
+                                <span class="px-2.5 py-1 rounded-lg bg-slate-950 border border-slate-800 text-sky-300 font-bold"><i class="fa-solid fa-check text-sky-400 mr-1.5"></i>HSRP</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Security & Firewall -->
+                    <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 space-y-4 flex flex-col justify-between">
+                        <div class="space-y-4">
+                            <div class="flex items-center gap-3.5 border-b border-slate-800 pb-3.5">
+                                <div class="w-10 h-10 rounded-xl bg-teal-500/10 text-teal-400 flex items-center justify-center font-bold text-lg">
+                                    <i class="fa-solid fa-shield"></i>
+                                </div>
+                                <h3 class="font-bold text-slate-100 text-base">Security & Firewall</h3>
+                            </div>
+                            <div class="flex flex-wrap gap-2 text-xs font-mono text-slate-300">
+                                <span class="px-2.5 py-1 rounded-lg bg-slate-950 border border-slate-800 text-teal-300 font-bold"><i class="fa-solid fa-shield-halved text-teal-400 mr-1.5"></i>FortiGate (Policies, NAT, VPN)</span>
+                                <span class="px-2.5 py-1 rounded-lg bg-slate-950 border border-slate-800 text-slate-200"><i class="fa-solid fa-check text-teal-400 mr-1.5"></i>ACLs (Standard / Extended)</span>
+                                <span class="px-2.5 py-1 rounded-lg bg-slate-950 border border-slate-800 text-slate-200"><i class="fa-solid fa-check text-teal-400 mr-1.5"></i>Port Security (MAC Sticky)</span>
+                                <span class="px-2.5 py-1 rounded-lg bg-slate-950 border border-slate-800 text-slate-200"><i class="fa-solid fa-check text-teal-400 mr-1.5"></i>802.1X Basics</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Network Services -->
+                    <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 space-y-4 flex flex-col justify-between">
+                        <div class="space-y-4">
+                            <div class="flex items-center gap-3.5 border-b border-slate-800 pb-3.5">
+                                <div class="w-10 h-10 rounded-xl bg-indigo-500/10 text-indigo-400 flex items-center justify-center font-bold text-lg">
+                                    <i class="fa-solid fa-server"></i>
+                                </div>
+                                <h3 class="font-bold text-slate-100 text-base">Network Services</h3>
+                            </div>
+                            <div class="flex flex-wrap gap-2 text-xs font-mono text-slate-300">
+                                <span class="px-2.5 py-1 rounded-lg bg-slate-950 border border-slate-800 text-slate-200"><i class="fa-solid fa-check text-indigo-400 mr-1.5"></i>DHCP & Relay</span>
+                                <span class="px-2.5 py-1 rounded-lg bg-slate-950 border border-slate-800 text-slate-200"><i class="fa-solid fa-check text-indigo-400 mr-1.5"></i>DNS & Records</span>
+                                <span class="px-2.5 py-1 rounded-lg bg-slate-950 border border-slate-800 text-slate-200"><i class="fa-solid fa-check text-indigo-400 mr-1.5"></i>NTP Time Sync</span>
+                                <span class="px-2.5 py-1 rounded-lg bg-slate-950 border border-slate-800 text-slate-200"><i class="fa-solid fa-check text-indigo-400 mr-1.5"></i>Syslog Telemetry</span>
+                                <span class="px-2.5 py-1 rounded-lg bg-slate-950 border border-slate-800 text-slate-200"><i class="fa-solid fa-check text-indigo-400 mr-1.5"></i>SNMP Monitoring</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Wireless & Physical -->
+                    <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 space-y-4 flex flex-col justify-between">
+                        <div class="space-y-4">
+                            <div class="flex items-center gap-3.5 border-b border-slate-800 pb-3.5">
+                                <div class="w-10 h-10 rounded-xl bg-amber-500/10 text-amber-400 flex items-center justify-center font-bold text-lg">
+                                    <i class="fa-solid fa-wifi"></i>
+                                </div>
+                                <h3 class="font-bold text-slate-100 text-base">Wireless & Physical</h3>
+                            </div>
+                            <div class="flex flex-wrap gap-2 text-xs font-mono text-slate-300">
+                                <span class="px-2.5 py-1 rounded-lg bg-slate-950 border border-slate-800 text-slate-200"><i class="fa-solid fa-check text-amber-400 mr-1.5"></i>AP Configuration</span>
+                                <span class="px-2.5 py-1 rounded-lg bg-slate-950 border border-slate-800 text-slate-200"><i class="fa-solid fa-check text-amber-400 mr-1.5"></i>SSID & WPA2 Security</span>
+                                <span class="px-2.5 py-1 rounded-lg bg-slate-950 border border-slate-800 text-slate-200"><i class="fa-solid fa-check text-amber-400 mr-1.5"></i>Structured Cabling</span>
+                                <span class="px-2.5 py-1 rounded-lg bg-slate-950 border border-slate-800 text-slate-200"><i class="fa-solid fa-check text-amber-400 mr-1.5"></i>Patch Panels & Rack Dressing</span>
+                                <span class="px-2.5 py-1 rounded-lg bg-slate-950 border border-slate-800 text-slate-200"><i class="fa-solid fa-check text-amber-400 mr-1.5"></i>Fiber & Copper Basics</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Fundamentals -->
+                    <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 space-y-4 flex flex-col justify-between">
+                        <div class="space-y-4">
+                            <div class="flex items-center gap-3.5 border-b border-slate-800 pb-3.5">
+                                <div class="w-10 h-10 rounded-xl bg-blue-500/10 text-blue-400 flex items-center justify-center font-bold text-lg">
+                                    <i class="fa-solid fa-layer-group"></i>
+                                </div>
+                                <h3 class="font-bold text-slate-100 text-base">Fundamentals</h3>
+                            </div>
+                            <div class="flex flex-wrap gap-2 text-xs font-mono text-slate-300">
+                                <span class="px-2.5 py-1 rounded-lg bg-slate-950 border border-slate-800 text-slate-200"><i class="fa-solid fa-check text-blue-400 mr-1.5"></i>OSI / TCP-IP Model</span>
+                                <span class="px-2.5 py-1 rounded-lg bg-slate-950 border border-slate-800 text-slate-200"><i class="fa-solid fa-check text-blue-400 mr-1.5"></i>IPv4 & IPv6 Addressing</span>
+                                <span class="px-2.5 py-1 rounded-lg bg-slate-950 border border-slate-800 text-slate-200"><i class="fa-solid fa-check text-blue-400 mr-1.5"></i>Subnetting (VLSM)</span>
+                                <span class="px-2.5 py-1 rounded-lg bg-slate-950 border border-slate-800 text-slate-200"><i class="fa-solid fa-check text-blue-400 mr-1.5"></i>ARP & MAC Tables</span>
+                                <span class="px-2.5 py-1 rounded-lg bg-slate-950 border border-slate-800 text-slate-200"><i class="fa-solid fa-check text-blue-400 mr-1.5"></i>TCP / UDP Transport</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tools -->
+                    <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 space-y-4 flex flex-col justify-between">
+                        <div class="space-y-4">
+                            <div class="flex items-center gap-3.5 border-b border-slate-800 pb-3.5">
+                                <div class="w-10 h-10 rounded-xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center font-bold text-lg">
+                                    <i class="fa-solid fa-wrench"></i>
+                                </div>
+                                <h3 class="font-bold text-slate-100 text-base">Tools</h3>
+                            </div>
+                            <div class="flex flex-wrap gap-2 text-xs font-mono text-slate-300">
+                                <span class="px-2.5 py-1 rounded-lg bg-slate-950 border border-slate-800 text-emerald-300 font-bold"><i class="fa-solid fa-magnifying-glass-chart text-emerald-400 mr-1.5"></i>Wireshark</span>
+                                <span class="px-2.5 py-1 rounded-lg bg-slate-950 border border-slate-800 text-emerald-300 font-bold"><i class="fa-solid fa-network-wired text-emerald-400 mr-1.5"></i>Nmap</span>
+                                <span class="px-2.5 py-1 rounded-lg bg-slate-950 border border-slate-800 text-slate-200"><i class="fa-solid fa-desktop text-emerald-400 mr-1.5"></i>PuTTY / SSH</span>
+                                <span class="px-2.5 py-1 rounded-lg bg-slate-950 border border-slate-800 text-slate-200"><i class="fa-solid fa-laptop-code text-emerald-400 mr-1.5"></i>Cisco Packet Tracer</span>
+                                <span class="px-2.5 py-1 rounded-lg bg-slate-950 border border-slate-800 text-slate-200"><i class="fa-solid fa-diagram-project text-emerald-400 mr-1.5"></i>GNS3 & EVE-NG</span>
+                                <span class="px-2.5 py-1 rounded-lg bg-slate-950 border border-slate-800 text-slate-200"><i class="fa-solid fa-ticket text-emerald-400 mr-1.5"></i>ITSM Ticketing Tools</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Troubleshooting Focus Banner -->
+                <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6.5 space-y-4">
+                    <div class="flex items-center gap-3.5 border-b border-slate-800 pb-3.5">
+                        <div class="w-10 h-10 rounded-xl bg-red-500/10 text-red-400 flex items-center justify-center font-bold text-lg">
+                            <i class="fa-solid fa-screwdriver-wrench"></i>
+                        </div>
+                        <h3 class="font-bold text-slate-100 text-base">Troubleshooting Focus</h3>
+                    </div>
+                    <div class="flex flex-wrap gap-2.5 text-xs font-mono text-slate-300">
+                        <span class="px-3 py-1.5 rounded-lg bg-slate-950 border border-slate-800 text-red-300 font-semibold"><i class="fa-solid fa-triangle-exclamation text-red-400 mr-1.5"></i>Packet Loss & High Latency Isolation</span>
+                        <span class="px-3 py-1.5 rounded-lg bg-slate-950 border border-slate-800 text-red-300 font-semibold"><i class="fa-solid fa-triangle-exclamation text-red-400 mr-1.5"></i>VLAN / Trunk / Routing Issues</span>
+                        <span class="px-3 py-1.5 rounded-lg bg-slate-950 border border-slate-800 text-red-300 font-semibold"><i class="fa-solid fa-triangle-exclamation text-red-400 mr-1.5"></i>DNS & DHCP Scope Faults</span>
+                        <span class="px-3 py-1.5 rounded-lg bg-slate-950 border border-slate-800 text-red-300 font-semibold"><i class="fa-solid fa-triangle-exclamation text-red-400 mr-1.5"></i>Interface Errors & Flapping Link Diagnostics</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="py-20 md:py-24 border-b border-slate-800/80">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
+                
+                <div class="space-y-3">
+                    <span class="text-xs font-mono font-bold text-sky-400 tracking-widest uppercase bg-sky-500/10 px-3 py-1 rounded-full border border-sky-500/30">Projects</span>
+                    <h2 class="text-3xl sm:text-4xl font-black text-slate-100">Featured Network Implementation</h2>
+                </div>
+
+                <div class="bg-slate-900 border border-slate-800 rounded-2xl p-7 sm:p-9 shadow-xl space-y-8">
+                    
+                    <div class="space-y-2 border-b border-slate-800 pb-5">
+                        <h3 class="text-2xl font-bold text-slate-100">
+                            Enterprise Network & FortiGate Firewall Implementation
+                        </h3>
+                        <p class="text-sky-400 text-xs font-mono font-semibold">
+                            Hands-on Lab on Physical Cisco Routers & Switches
+                        </p>
+                    </div>
+
+                    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+                        <div class="lg:col-span-7 space-y-3.5 text-slate-300 text-sm leading-relaxed">
+                            <div class="flex items-start gap-3.5">
+                                <i class="fa-solid fa-circle-check text-sky-400 text-sm mt-0.5"></i>
+                                <span>Designed and built a multi-department enterprise network on physical routers and switches with VLAN segmentation, inter-VLAN routing, trunking and redundant switching.</span>
+                            </div>
+                            <div class="flex items-start gap-3.5">
+                                <i class="fa-solid fa-circle-check text-sky-400 text-sm mt-0.5"></i>
+                                <span>Configured OSPF and static routing for end-to-end connectivity across multiple branch networks.</span>
+                            </div>
+                            <div class="flex items-start gap-3.5">
+                                <i class="fa-solid fa-circle-check text-sky-400 text-sm mt-0.5"></i>
+                                <span>Implemented ACLs, DHCP, NAT and HSRP to meet typical enterprise requirements.</span>
+                            </div>
+                            <div class="flex items-start gap-3.5">
+                                <i class="fa-solid fa-circle-check text-sky-400 text-sm mt-0.5"></i>
+                                <span>Implemented a FortiGate firewall at the network edge: interface and zone setup, static routing and firewall policies controlling traffic between internal VLANs and external networks.</span>
+                            </div>
+                            <div class="flex items-start gap-3.5">
+                                <i class="fa-solid fa-circle-check text-sky-400 text-sm mt-0.5"></i>
+                                <span>Configured NAT (source NAT and virtual IPs/port forwarding) and VPN access, including site-to-site IPsec and SSL VPN.</span>
+                            </div>
+                            <div class="flex items-start gap-3.5">
+                                <i class="fa-solid fa-circle-check text-sky-400 text-sm mt-0.5"></i>
+                                <span>Applied FortiGate security profiles (web filtering, antivirus, IPS and application control) with user authentication to enforce access policy.</span>
+                            </div>
+                            <div class="flex items-start gap-3.5">
+                                <i class="fa-solid fa-circle-check text-sky-400 text-sm mt-0.5"></i>
+                                <span>Enabled logging and monitoring, and tested firewall high availability (HA) and failover behaviour.</span>
+                            </div>
+                            <div class="flex items-start gap-3.5">
+                                <i class="fa-solid fa-circle-check text-sky-400 text-sm mt-0.5"></i>
+                                <span>Verified and troubleshot connectivity using ping, traceroute, Wireshark and Cisco IOS show commands.</span>
+                            </div>
+                        </div>
+
+                        <div class="lg:col-span-5">
+                            <div class="rounded-xl overflow-hidden border border-slate-800 shadow-xl">
+                                <img src="topology_banner.jpg" alt="Enterprise Network Lab Architecture" class="w-full h-72 object-cover">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Education & Certifications Section -->
+        <section id="education" class="py-20 md:py-24 border-b border-slate-800/80 bg-slate-900/30">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
+                
+                <div class="space-y-3">
+                    <span class="text-xs font-mono font-bold text-sky-400 tracking-widest uppercase bg-sky-500/10 px-3 py-1 rounded-full border border-sky-500/30">Education & Certifications</span>
+                    <h2 class="text-3xl sm:text-4xl font-black text-slate-100">Academic & Training Qualifications</h2>
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+                    
+                    <!-- Certifications & Professional Training -->
+                    <div class="lg:col-span-6 space-y-4 flex flex-col justify-between">
+                        
+                        <!-- CCNA Training -->
+                        <div class="bg-slate-900 border border-sky-500/40 rounded-2xl p-5 shadow-xl space-y-3">
+                            <div class="flex items-center gap-3 border-b border-slate-800 pb-3">
+                                <div class="w-10 h-10 rounded-xl bg-sky-500/20 text-sky-400 flex items-center justify-center text-xl font-bold">
+                                    <i class="fa-solid fa-certificate"></i>
+                                </div>
+                                <div>
+                                    <h3 class="text-base font-extrabold text-slate-100">CCNA Training</h3>
+                                    <p class="text-sky-400 text-xs font-mono font-semibold">NetTech India | June 2026 – July 2026</p>
+                                </div>
+                            </div>
+                            <p class="text-slate-300 text-xs leading-relaxed">
+                                Rigorously trained in Cisco network switching, OSPF routing, IP addressing, subnetting, access control lists (ACLs), NAT, and hands-on physical IOS device CLI troubleshooting.
+                            </p>
+                        </div>
+
+                        <!-- FortiGate Firewall Training -->
+                        <div class="bg-slate-900 border border-teal-500/40 rounded-2xl p-5 shadow-xl space-y-3">
+                            <div class="flex items-center gap-3 border-b border-slate-800 pb-3">
+                                <div class="w-10 h-10 rounded-xl bg-teal-500/20 text-teal-400 flex items-center justify-center text-xl font-bold">
+                                    <i class="fa-solid fa-shield-halved"></i>
+                                </div>
+                                <div>
+                                    <h3 class="text-base font-extrabold text-slate-100">FortiGate Firewall Training</h3>
+                                    <p class="text-teal-400 text-xs font-mono font-semibold">NFT Technology</p>
+                                </div>
+                            </div>
+                            <p class="text-slate-300 text-xs leading-relaxed">
+                                Specialized training in FortiGate Next-Generation Firewall deployment, security policy verification, NAT configurations, IPsec & SSL VPN setups, IPS/AV profiles, and High Availability (HA) failover operations.
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <!-- Education Details -->
+                    <div class="lg:col-span-6 space-y-4 flex flex-col justify-between">
+                        
+                        <div class="bg-slate-900 border border-slate-800 rounded-2xl p-5 flex items-center justify-between">
+                            <div>
+                                <span class="text-[11px] font-mono font-bold text-sky-400">GRADUATED 2026</span>
+                                <h4 class="text-base font-bold text-slate-100">B.Sc. Information Technology</h4>
+                                <p class="text-xs text-slate-400">University of Mumbai</p>
+                            </div>
+                            <div class="text-right">
+                                <div class="text-xl font-bold text-sky-400 font-mono">8.23</div>
+                                <div class="text-[10px] text-slate-500 font-mono">CGPA</div>
+                            </div>
+                        </div>
+
+                        <div class="bg-slate-900 border border-slate-800 rounded-2xl p-5 flex items-center justify-between">
+                            <div>
+                                <span class="text-[11px] font-mono text-slate-400">COMPLETED 2023</span>
+                                <h4 class="text-base font-bold text-slate-100">HSC (Class XII)</h4>
+                                <p class="text-xs text-slate-400">Maharashtra State Board</p>
+                            </div>
+                            <div class="text-right">
+                                <div class="text-lg font-bold text-slate-200 font-mono">76.33%</div>
+                                <div class="text-[10px] text-slate-500 font-mono">MARKS</div>
+                            </div>
+                        </div>
+
+                        <div class="bg-slate-900 border border-slate-800 rounded-2xl p-5 flex items-center justify-between">
+                            <div>
+                                <span class="text-[11px] font-mono text-slate-400">COMPLETED 2021</span>
+                                <h4 class="text-base font-bold text-slate-100">SSC (Class X)</h4>
+                                <p class="text-xs text-slate-400">Maharashtra State Board</p>
+                            </div>
+                            <div class="text-right">
+                                <div class="text-lg font-bold text-slate-200 font-mono">75.80%</div>
+                                <div class="text-[10px] text-slate-500 font-mono">MARKS</div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-20 md:py-24 bg-slate-950">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
+                
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-stretch">
+                    
+                    <div class="lg:col-span-5 space-y-6 flex flex-col justify-between">
+                        <div class="space-y-6">
+                            <div class="space-y-3">
+                                <span class="text-xs font-mono font-bold text-sky-400 tracking-widest uppercase bg-sky-500/10 px-3 py-1 rounded-full border border-sky-500/30">Get In Touch</span>
+                                <h2 class="text-3xl sm:text-4xl font-black text-slate-100">Contact Sandesh Pokharkar</h2>
+                                <p class="text-slate-400 text-sm leading-relaxed">
+                                    Open to L2 Network Engineer, Network Operations (NOC), and Infrastructure Support opportunities.
+                                </p>
+                            </div>
+
+                            <div class="space-y-3.5 pt-2">
+                                <a href="tel:+919152600509" class="flex items-center gap-4 p-4 rounded-xl bg-slate-900 border border-slate-800 hover:border-sky-500/50 transition-colors group">
+                                    <div class="w-11 h-11 rounded-xl bg-sky-500/10 text-sky-400 flex items-center justify-center text-lg">
+                                        <i class="fa-solid fa-phone"></i>
+                                    </div>
+                                    <div>
+                                        <div class="text-[11px] text-slate-500 font-mono">PHONE / MOBILE</div>
+                                        <div class="text-slate-100 font-semibold font-mono text-sm">+91 9152600509</div>
+                                    </div>
+                                </a>
+
+                                <a href="mailto:sandeshpokharkar5248@gmail.com" class="flex items-center gap-4 p-4 rounded-xl bg-slate-900 border border-slate-800 hover:border-sky-500/50 transition-colors group">
+                                    <div class="w-11 h-11 rounded-xl bg-sky-500/10 text-sky-400 flex items-center justify-center text-lg">
+                                        <i class="fa-solid fa-envelope"></i>
+                                    </div>
+                                    <div>
+                                        <div class="text-[11px] text-slate-500 font-mono">EMAIL ADDRESS</div>
+                                        <div class="text-slate-100 font-semibold font-mono text-sm">sandeshpokharkar5248@gmail.com</div>
+                                    </div>
+                                </a>
+
+                                <a href="https://linkedin.com/in/sandeshpokharkar-942809418" target="_blank" rel="noopener" class="flex items-center gap-4 p-4 rounded-xl bg-slate-900 border border-slate-800 hover:border-blue-500/50 transition-colors group">
+                                    <div class="w-11 h-11 rounded-xl bg-blue-500/10 text-blue-400 flex items-center justify-center text-lg">
+                                        <i class="fa-brands fa-linkedin"></i>
+                                    </div>
+                                    <div>
+                                        <div class="text-[11px] text-slate-500 font-mono">LINKEDIN</div>
+                                        <div class="text-slate-100 font-semibold font-mono text-sm">linkedin.com/in/sandeshpokharkar-942809418</div>
+                                    </div>
+                                </a>
+
+                                <div class="flex items-center gap-4 p-4 rounded-xl bg-slate-900 border border-slate-800">
+                                    <div class="w-11 h-11 rounded-xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center text-lg">
+                                        <i class="fa-solid fa-location-dot"></i>
+                                    </div>
+                                    <div>
+                                        <div class="text-[11px] text-slate-500 font-mono">LOCATION</div>
+                                        <div class="text-slate-100 font-semibold text-sm">Dombivli, Maharashtra, India</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form -->
+                    <div class="lg:col-span-7 bg-slate-900 border border-slate-800 rounded-2xl p-7 sm:p-9 shadow-xl space-y-5 flex flex-col justify-between">
+                        <div class="border-b border-slate-800 pb-4">
+                            <h3 class="text-xl font-bold text-slate-100">Send Direct Message</h3>
+                            <p class="text-xs text-slate-400 mt-1">Get in touch for network support roles or inquiries.</p>
+                        </div>
+
+                        <form id="contact-form" class="space-y-4 text-xs font-mono">
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                <div class="space-y-1.5">
+                                    <label class="text-slate-400">YOUR NAME</label>
+                                    <input type="text" id="contact-name" required placeholder="John Doe" class="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-800 text-slate-100 focus:outline-none focus:border-sky-400">
+                                </div>
+                                <div class="space-y-1.5">
+                                    <label class="text-slate-400">YOUR EMAIL</label>
+                                    <input type="email" id="contact-email" required placeholder="john@example.com" class="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-800 text-slate-100 focus:outline-none focus:border-sky-400">
+                                </div>
+                            </div>
+
+                            <div class="space-y-1.5">
+                                <label class="text-slate-400">SUBJECT</label>
+                                <input type="text" id="contact-subject" required placeholder="L2 Network Engineer Role" class="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-800 text-slate-100 focus:outline-none focus:border-sky-400">
+                            </div>
+
+                            <div class="space-y-1.5">
+                                <label class="text-slate-400">MESSAGE</label>
+                                <textarea id="contact-message" rows="4" required placeholder="Your message here..." class="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-800 text-slate-100 focus:outline-none focus:border-sky-400"></textarea>
+                            </div>
+
+                            <button type="submit" class="w-full py-3.5 rounded-xl bg-sky-500 hover:bg-sky-400 text-slate-950 font-bold font-sans text-sm shadow-lg shadow-sky-500/25 transition-all">
+                                Send Message
+                            </button>
+                            <div id="form-response" class="hidden text-center p-3 rounded-xl bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 font-mono text-xs"></div>
+                        </form>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-slate-800/80 bg-slate-950 py-8 font-mono text-xs text-slate-500">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <div>
+                © 2026 Sandesh Pokharkar • L2 Network Engineer Portfolio
+            </div>
+            <div class="flex items-center gap-4 text-slate-400">
+                <span>Cisco IOS</span>
+                <span>•</span>
+                <span>FortiGate NGFW</span>
+                <span>•</span>
+                <span>OSPF & HSRP</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- App Script -->
+    <script src="app.js"></script>
+
+</body>
+</html>
